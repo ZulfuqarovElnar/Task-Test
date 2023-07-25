@@ -20,24 +20,7 @@ body {
     text-align: center;
     letter-spacing: -0.05em;
     flex: none;
-
-    @media screen and (max-width: 950px) {
-        width: 650px;
-        height: 112px;
-        font-size: 72px;
-        margin-top: 66px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and (max-width: 281px) {
-        width: 270px;
-        height: 112px;
-        font-size: 52px;
-        margin-top: 66px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    object-fit: cover;
 }
 
 .factsSecondaryHeading {
@@ -52,32 +35,6 @@ body {
     line-height: 110%;
     letter-spacing: -0.03em;
     margin-left: 30px;
-
-    @media screen and (max-width: 950px) {
-        width: 600px;
-        font-size: 40px;
-        line-height: 40px;
-        margin-top: 66px;
-        margin-left: 0px;
-    }
-
-    @media screen and (max-width: 550px) {
-        width: 325px;
-        font-size: 40px;
-        line-height: 40px;
-        margin-top: 66px;
-        margin-bottom: 66px;
-        margin-left: 0px;
-    }
-
-    @media screen and (max-width: 280px) {
-        width: 270px;
-        font-size: 32px;
-        line-height: 40px;
-        margin-top: 66px;
-        margin-bottom: 66px;
-        margin-left: 0px;
-    }
 }
 
 .factList {
@@ -94,7 +51,8 @@ body {
 }
 
 .factDesription {
-    width: 708px;
+    max-width: 708px;
+    width: 100%;
     min-height: 65px;
     font-family: sans-serif;
     font-style: normal;
@@ -104,50 +62,125 @@ body {
     letter-spacing: -0.03em;
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 950px) {
+}
+@media screen and (max-width: 950px) {
+    .factsMainHeading{
+        width: 650px;
+        height: 112px;
+        font-size: 72px;
+    }
+    .factsSecondaryHeading{
+        width: 600px;
+        font-size: 40px;
+        line-height: 40px;
+        margin-left: 0px;
+    }
+    .factDesription{
         font-size: 24px;
         width: 650px;
         line-height: 31px;
     }
+    
+}
 
-    @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 600px;
     }
+    .factsMainHeading{
+        font-size: 68px;
+    }
+}
 
-    @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 550px;
     }
+    .factsMainHeading{
+        font-size: 64px;
+    }
+}
 
-    @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 500px;
     }
+    .factsMainHeading{
+        font-size: 60px;
+    }
+}
 
-    @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 450px;
     }
+}
 
-    @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 400px;
     }
+    .factsMainHeading{
+        font-size: 52px;
+    }
+}
 
-    @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 350px;
     }
 
-    @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 300px;
     }
+}
 
-    @media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
+    .factsMainHeading,
+    .factDesription{
         width: 260px;
     }
+    .factsSecondaryHeading{
+        width: 325px;
+        font-size: 40px;
+    }
+}
 
-    @media screen and (max-width: 376px) {
+@media screen and (max-width: 376px) {
+    .factsMainHeading,
+    .factsSecondaryHeading,
+    .factDesription{
         width: 230px;
     }
+    .factsMainHeading{
+        font-size: 44px;
+    }
+}
 
-    @media screen and (max-width: 281px) {
+@media screen and (max-width: 281px) {
+    .factsSecondaryHeading{
+        width: 270px;
+        font-size: 32px;
+    }
+    .factsSecondaryHeading,
+    .factDesription{
         width: 170px;
     }
 }
